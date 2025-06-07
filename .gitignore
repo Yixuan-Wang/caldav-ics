@@ -1,0 +1,9 @@
+.env
+.python-version
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+*.pyo
+*.pyd
+

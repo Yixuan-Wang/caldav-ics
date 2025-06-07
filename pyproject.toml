@@ -1,0 +1,29 @@
+[project]
+name = "caldav_ics"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "caldav",
+    "fastapi>=0.115.12",
+    "icalendar>=6.3.1",
+    "python-dotenv>=1.1.0",
+    "typer>=0.16.0",
+    "uvicorn>=0.34.3",
+]
+
+[build-system]
+requires = ["setuptools>=68.0.0"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "ipdb>=0.13.13",
+]
+
+[tool.uv.sources]
+caldav = { git = "https://github.com/python-caldav/caldav.git", rev = "835ef397a099327a95b86520ce941e0713205f6f" }
+
+[tool.pyright]
+reportRedeclaration = false
